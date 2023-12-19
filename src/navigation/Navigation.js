@@ -10,7 +10,10 @@ const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}>
+    <Tab.Navigator
+      initialRouteName="PokedexTab"
+      screenOptions={{ headerShown: false }}
+    >
       <Tab.Screen
         name="FavoriteTab"
         component={FavoriteNavigation}
